@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite movie</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px
+        }
+        .myDiv {
+            text-align: center;
+            color: rgb(12, 11, 12);
+            font-size: 18px;
+            font-family: monospace;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+            height: 500px;
+        }
+        h3 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: rgb(12, 11, 12);
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 20px 30px 20px 30px;
+            margin-left: 10px;
+        }
+        button {
+        color: white;
+        margin: 0 auto 30px auto;
+        display: block;
+        font-size: 16px;
+        background: #6f42c1;
+        padding: 15px 30px;
+        border: 1px solid #f5587b;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px #ff008b;
+        transition: all 200ms ease-in-out;
+      }
+        .by {
+        text-align: center;
+        color: #280b45;
+      }
+      button:hover {
+        color: #280b45;
+        cursor: pointer;
+        background: white;
+      }
+    </style>
+</head>
+<body>
+    <h1>ACRIMONY</h1>
+    <div class="myDiv">
+    <p>
+        <strong>
+            When Melinda met Robert, she was sceptical of his charming nature,<br />
+            but couldn't deny how attracted she was to him. <br />
+            Once they fell in love, Melinda moulded herself into everything he wanted her to be.<br />
+            She sacrificed for him, worked to support his grandiose dreams,<br />
+            and put up with him for better or for worse. <br />
+            Then, one day she realised that, after all she had done,<br />
+            another woman was reaping the lavish rewards. <br/>
+            That's when Melinda lost it, and now she cannot let it go.
+        </strong>
+    </p>
+    </div>
+    <img src="/images/taraji.jpg" alt="Taraji"/>
+    <h3>
+            This movie left me wondering who was wrong?
+        </b>
+    </h3>
+    <ul>
+        <li>The family</li>
+        <li>The sidechick</li>
+        <li>The husband</li>
+        <li>Herself</li>
+    </ul>
+    <button>Rent Movie</button>
+    <p class="by">Coded By Sharon Mutyakureva</p>
+</body>
+<script>
+    function Welcome() {
+    let name = prompt("What is your name?");
+    let choose = prompt("Who was wrong?");
+    if (female) {
+        alert("Hi" + name + ",You agree with the majority");
+    } 
+    else {
+        alert("Hi" + name + ",You agree with minority");
+    }
+}
+let rentMovie = document.querySelector("button");
+    rentMovie.addEventListener("click", welcome);
+</script>
+</html>
+
+

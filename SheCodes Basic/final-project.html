@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Perfume Landing Page</title>
+    <style>
+      body {
+        background-color: #ffdede;
+        border: 5px solid #ff008b;
+        padding: auto;
+        /*
+        background-image: url(https://media.istockphoto.com/id/165661780/photo/getting-ready.jpg?s=612x612&w=0&k=20&c=NLvsSFvBTjd-nbjgKfFwd8IryVRiIjKkJ_vz58NNLoQ=);
+        background-repeat: no-repeat;
+        background-size: cover; */
+      }
+      h1 {
+        color: #280b45;
+        text-align: center;
+        margin: 0;
+        line-height: 46px;
+        font-size: 34px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      h2 {
+        text-align: center;
+        color: #280b45;
+      }
+      .myDiv {
+        text-align: center;
+        color: #280b45;
+        font-size: 18px;
+        font-family: monospace;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 500px;
+        width: 500px;
+        margin-bottom: 40px;
+      }
+      button {
+        color: white;
+        margin: 0 auto 30px auto;
+        display: block;
+        font-size: 16px;
+        background: #6f42c1;
+        padding: 15px 30px;
+        border: 1px solid #f5587b;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px #ff008b;
+        transition: all 200ms ease-in-out;
+      }
+      .by {
+        text-align: center;
+        color: #280b45;
+      }
+      button:hover {
+        color: #280b45;
+        cursor: pointer;
+        background: white;
+      }
+      a {
+        color: #280b45;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Perfumes</h1>
+    <h2>
+      <strong>Best Perfumes For Your Wedding Day </strong>
+    </h2>
+    <div class="myDiv">
+      <p>
+        <em
+          >You’ve spent months meticulously planning the look and feel of your
+          wedding day, but what about the scent? <br />It’s said a picture can
+          paint a thousand words, but a smell can instantly transport you to a
+          moment in time, <br />
+          and what better moment to revisit than your wedding.
+          <span
+            >Which is why “choose a wedding day perfume” needs to be added to
+            your to-do list.</span
+          >
+        </em>
+      </p>
+      <a
+        href="https://onefinedayweddingfair.com.au/wedding-tips/best-wedding-perfumes-australia/"
+        target="_blank"
+        >One Fine Day!</a
+      >
+      <hr />
+    </div>
+    <img
+      src="https://onefinedayweddingfair.com.au/wp-content/uploads/2023/01/FEATURE-1-1024x1024.jpg"
+      alt="perfumes"
+    />
+    <button>Order Now</button>
+    <p class="by">Coded By Sharon Mutyakureva</p>
+  </body>
+  <script>
+    function welcome() {
+      let name = prompt("What is your name?");
+      let favoritePerfume = prompt("What is your favorite perfume?");
+      if (favoritePerfume) {
+        alert("Hi" + name + ",Welcome to One Fine Day");
+      } else {
+        alert("Hi" + name + ",We will get back to you soon!😊");
+      }
+    }
+    let orderNow = document.querySelector("button");
+    orderNow.addEventListener("click", welcome);
+  </script>
+</html>
